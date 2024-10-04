@@ -135,4 +135,13 @@
   <data name="FailedToCheckoutBranch" xml:space="preserve">
     <value>Failed to checkout branch</value>
   </data>
+  <data name="FailedToRetrievingStatus" xml:space="preserve">
+    <value>Error retrieving status</value>
+  </data>
+  <data name="RepositoryAlreadyExists" xml:space="preserve">
+    <value>Repository already exists.</value>
+  </data>
+  <data name="FailedToCloneRepository" xml:space="preserve">
+    <value>Failed to clone repository</value>
+  </data>
 </root>

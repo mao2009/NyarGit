@@ -135,4 +135,13 @@
   <data name="FailedToCheckoutBranch" xml:space="preserve">
     <value>チェックアウトに失敗しました。</value>
   </data>
+  <data name="FailedToRetrievingStatus" xml:space="preserve">
+    <value>ステータスの取得に失敗しました。</value>
+  </data>
+  <data name="RepositoryAlreadyExsits" xml:space="preserve">
+    <value>リポジトリはすでに存在しています。</value>
+  </data>
+  <data name="FailedToCloneRepository" xml:space="preserve">
+    <value>クローンに失敗しました。</value>
+  </data>
 </root>

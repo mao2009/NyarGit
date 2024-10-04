@@ -7,6 +7,7 @@ using Avalonia.Input;
 using Avalonia.Interactivity;
 using CommunityToolkit.Mvvm.ComponentModel;
 using ReactiveUI;
+using Avalonia.Logging;
 
 namespace NyarGit.ViewModels
 {
@@ -14,10 +15,10 @@ namespace NyarGit.ViewModels
     {
         [ObservableProperty]
         private string _greeting = "Welcome to Avalonia!";
-
+        
 
         public MainViewModel() {
-     
+            
         }
 
     }

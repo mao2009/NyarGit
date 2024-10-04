@@ -79,6 +79,15 @@ namespace NyarGit.Properties {
         }
         
         /// <summary>
+        ///   Failed to clone repository に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string FailedToCloneRepository {
+            get {
+                return ResourceManager.GetString("FailedToCloneRepository", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Failed to commit changes. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string FailedToCommitChanges {
@@ -106,11 +115,29 @@ namespace NyarGit.Properties {
         }
         
         /// <summary>
+        ///   Error retrieving status に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string FailedToRetrievingStatus {
+            get {
+                return ResourceManager.GetString("FailedToRetrievingStatus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Failed to stage changes. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string FailedToStageChanges {
             get {
                 return ResourceManager.GetString("FailedToStageChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Repository already exists. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string RepositoryAlreadyExists {
+            get {
+                return ResourceManager.GetString("RepositoryAlreadyExists", resourceCulture);
             }
         }
     }
