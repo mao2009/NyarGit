@@ -3,6 +3,9 @@ using LibGit2Sharp;
 
 namespace NyarGit.Models.Git
 {
+    /// <summary>
+    /// Represents the status of a Git operation.
+    /// </summary>
     public record GitStatus
     {
         public RepositoryStatus?  Status { get; init; }

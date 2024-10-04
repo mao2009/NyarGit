@@ -11,5 +11,4 @@ namespace NyarGit.Models.Git
             Message = message;
         }
     }
-
 }

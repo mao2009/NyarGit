@@ -1,14 +1,18 @@
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace NyarGit.Models.Git
 {
     public interface IGitClient
     {
-        GitResult CloneRepository(string repoUrl);
+        string Path { get; init; } 
+        GitResult Clone(string repoUrl);
 
         GitStatus GetStatus();
 
-        GitResult Add(string filePath);
+        GitResult StageAllChanges();
+        GitResult Stage(string filePath);
+        GitResult Stage(IEnumerable<string> filePaths);
 
         GitResult Commit(string message, string authorName, string authorEmail);
 
