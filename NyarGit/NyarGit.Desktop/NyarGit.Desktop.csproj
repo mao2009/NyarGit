@@ -21,4 +21,8 @@
   <ItemGroup>
     <ProjectReference Include="..\NyarGit\NyarGit.csproj" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="if &quot;$(Configuration)&quot; == &quot;Debug&quot; (&#xD;&#xA;    copy /Y &quot;$(SolutionDir)NyarGit\NyarGit\NLog.debug.config&quot; &quot;$(TargetDir)NLog.config&quot;&#xD;&#xA;) else (&#xD;&#xA;    copy /Y &quot;$(SolutionDir)NyarGit\NyarGit\NLog.release.config&quot; &quot;$(TargetDir)NLog.config&quot;&#xD;&#xA;)" />
+  </Target>
 </Project>

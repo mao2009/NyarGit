@@ -19,5 +19,43 @@
     <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
     <PackageReference Include="LibGit2Sharp" Version="0.30.0" />
+    <PackageReference Include="NLog" Version="5.3.4" />
+    <PackageReference Include="NLog.Schema" Version="5.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\InfoResource.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>InfoResource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\InfoResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>InfoResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Properties\ErrorResource.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>ErrorResource.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\ErrorResource.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>ErrorResource.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+    <None Update="NLog.debug.config">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

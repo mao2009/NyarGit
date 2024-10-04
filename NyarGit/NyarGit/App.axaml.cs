@@ -3,6 +3,7 @@ using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Data.Core;
 using Avalonia.Data.Core.Plugins;
 using Avalonia.Markup.Xaml;
+using NLog;
 using NyarGit.ViewModels;
 using NyarGit.Views;
 
@@ -10,9 +11,13 @@ namespace NyarGit
 {
     public partial class App : Application
     {
+        private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
+
         public override void Initialize()
         {
+
             AvaloniaXamlLoader.Load(this);
+            Logger.Info("test");
         }
 
         public override void OnFrameworkInitializationCompleted()
