@@ -138,7 +138,7 @@
   <data name="FailedToRetrievingStatus" xml:space="preserve">
     <value>ステータスの取得に失敗しました。</value>
   </data>
-  <data name="RepositoryAlreadyExsits" xml:space="preserve">
+  <data name="RepositoryAlreadyExists" xml:space="preserve">
     <value>リポジトリはすでに存在しています。</value>
   </data>
   <data name="FailedToCloneRepository" xml:space="preserve">

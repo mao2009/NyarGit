@@ -1,0 +1,36 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:vm="clr-namespace:NyarGit.ViewModels.Controls"
+			 xmlns:local="clr-namespace:NyarGit.Views.Controls"
+
+             x:Class="NyarGit.Views.Controls.CustomTitleBar"
+			 x:DataType="local:CustomTitleBar">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+
+		<StackPanel Grid.Column="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
+			<!-- ウィンドウのアイコン 
+			<Image Source="/Assets/window_icon.png" Width="16" Height="16" Margin="5" />
+			-->
+
+			<!-- タイトル -->
+			<TextBlock Text="My Custom Title" VerticalAlignment="Stretch"  Margin="10,0" />
+		</StackPanel>
+		<StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+			<!-- 最小化ボタン -->
+			<Button Content="_" Width="40" Height="32" Background="Transparent"
+					Command="{Binding MinimizeCommand}" />
+			<!-- 最大化/元に戻すボタン -->
+			<Button Content="⬜" Width="40" Height="32" Background="Transparent"
+					Command="{Binding MaximizeRestoreCommand}" />
+			<!-- 閉じるボタン -->
+			<Button Content="✖" Width="40" Height="32" Background="Transparent"
+					Command="{Binding CloseCommand}" />
+		</StackPanel>
+	</Grid>
+</UserControl>

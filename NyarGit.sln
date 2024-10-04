@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyarGit", "NyarGit\NyarGit\NyarGit.csproj", "{6CAD072B-1F1B-4579-94C2-6F0CC76EF811}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyarGit", "NyarGit\NyarGit\NyarGit.csproj", "{6CAD072B-1F1B-4579-94C2-6F0CC76EF811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyarGit.Android", "NyarGit\NyarGit.Android\NyarGit.Android.csproj", "{43A45458-C1D6-4F16-B119-7372E6BCC9B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyarGit.Android", "NyarGit\NyarGit.Android\NyarGit.Android.csproj", "{43A45458-C1D6-4F16-B119-7372E6BCC9B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyarGit.Desktop", "NyarGit\NyarGit.Desktop\NyarGit.Desktop.csproj", "{7EEE8E7B-E706-4DC4-8246-7D486CA73E11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyarGit.Desktop", "NyarGit\NyarGit.Desktop\NyarGit.Desktop.csproj", "{7EEE8E7B-E706-4DC4-8246-7D486CA73E11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyarGit.iOS", "NyarGit\NyarGit.iOS\NyarGit.iOS.csproj", "{E315EEA7-89DE-4162-86B8-5CE01E342E0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyarGit.iOS", "NyarGit\NyarGit.iOS\NyarGit.iOS.csproj", "{E315EEA7-89DE-4162-86B8-5CE01E342E0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyarGit.Browser", "NyarGit\NyarGit.Browser\NyarGit.Browser.csproj", "{5F59AD69-2B1E-4C70-B73F-94FD882B427E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NyarGit.Browser", "NyarGit\NyarGit.Browser\NyarGit.Browser.csproj", "{5F59AD69-2B1E-4C70-B73F-94FD882B427E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NyarGit.Tests", "NyarGit\NyarGit.Tests\NyarGit.Tests.csproj", "{D6949726-31DB-40DB-B488-0977546A3A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5F59AD69-2B1E-4C70-B73F-94FD882B427E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F59AD69-2B1E-4C70-B73F-94FD882B427E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F59AD69-2B1E-4C70-B73F-94FD882B427E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6949726-31DB-40DB-B488-0977546A3A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6949726-31DB-40DB-B488-0977546A3A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6949726-31DB-40DB-B488-0977546A3A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6949726-31DB-40DB-B488-0977546A3A16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
